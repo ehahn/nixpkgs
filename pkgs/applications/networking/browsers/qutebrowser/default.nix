@@ -1,6 +1,6 @@
 { stdenv, fetchurl, python, buildPythonPackage, qt5, pyqt5, jinja2, pygments, pyyaml, pypeg2}:
 
-let version = "0.2.1"; in
+let version = "0.3.0"; in
 
 buildPythonPackage {
   name = "qutebrowser-${version}";
@@ -8,7 +8,7 @@ buildPythonPackage {
   
   src = fetchurl {
     url = "https://github.com/The-Compiler/qutebrowser/releases/download/v${version}/qutebrowser-${version}.tar.gz";
-    sha256 = "b741a1a0336b8d36133603a3318d1c4c63c9abf50212919200cd2ae665b07111";
+    sha256 = "01c2cce71813c36a00591a7bd625f4fcf610f91229ce67b712fdf124fde151ec";
     };
     # Needs tox
     doCheck = false;
